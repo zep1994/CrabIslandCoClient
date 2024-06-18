@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrabIslandCo", "CrabIslandCo\CrabIslandCo\CrabIslandCo.csproj", "{D8E6A753-B6E6-44A5-B537-66AA226B803F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrabIslandCo.Client", "CrabIslandCo\CrabIslandCo.Client\CrabIslandCo.Client.csproj", "{8E0C889B-6765-45C7-937A-03D639171B81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8E6A753-B6E6-44A5-B537-66AA226B803F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E6A753-B6E6-44A5-B537-66AA226B803F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E6A753-B6E6-44A5-B537-66AA226B803F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E6A753-B6E6-44A5-B537-66AA226B803F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0C889B-6765-45C7-937A-03D639171B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0C889B-6765-45C7-937A-03D639171B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0C889B-6765-45C7-937A-03D639171B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0C889B-6765-45C7-937A-03D639171B81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B01F2DC3-AE12-4C73-890C-03E12768646A}
+	EndGlobalSection
+EndGlobal
