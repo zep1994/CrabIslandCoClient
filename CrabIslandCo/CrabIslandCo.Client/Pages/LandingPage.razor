@@ -1,0 +1,84 @@
+﻿@page "/"
+@using CrabIslandCo.Client.Pages
+@inject NavigationManager Navigation
+
+<PageTitle>High-End Men's Beach Apparel</PageTitle>
+
+<div class="container-fluid landing-page">
+    <section id="featured-products" class="my-5">
+        <h2 class="text-center">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/shorts.jpg" alt="Stylish Shorts">
+                    <div class="card-body">
+                        <h5 class="card-title">Stylish Shorts</h5>
+                        <p class="card-text">Comfortable and trendy beach shorts for the modern man.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/shirt.jpg" alt="Beach Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Shirt</h5>
+                        <p class="card-text">Lightweight and breathable shirts perfect for beach days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/hat.jpg" alt="Sun Hat">
+                    <div class="card-body">
+                        <h5 class="card-title">Sun Hat</h5>
+                        <p class="card-text">Protect yourself from the sun with our stylish hats.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="my-5">
+        <h2 class="text-center">Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Amazing quality and stylish designs. Perfect for my beach vacation!</p>
+                    <footer class="blockquote-footer">John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">The best beachwear I've ever owned. Highly recommend!</p>
+                    <footer class="blockquote-footer">James Smith</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">Great fit and feel. I love the unique styles they offer.</p>
+                    <footer class="blockquote-footer">Robert Johnson</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center my-5">
+        <p>&copy; 2024 Lux Beachwear. All rights reserved.</p>
+    </footer>
+</div>
+
+<style>
+    .landing-page {
+        padding-top: 56px; /* Height of the navbar to ensure content doesn't go under the navbar */
+    }
+    .jumbotron {
+        background-image: url('images/beach.jpg');
+        background-size: cover;
+        color: white;
+        padding: 5rem 1rem;
+    }
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>

@@ -1,0 +1,133 @@
+﻿@page "/about"
+@inherits LayoutComponentBase
+
+<div class="about-section">
+    <div class="container">
+        <h1>About Lux Beachwear</h1>
+        <p>Welcome to Lux Beachwear, your ultimate destination for premium beachwear and accessories. We are committed to providing you with the finest quality products that make your beach experience unforgettable.</p>
+        <img src="images/about-banner.jpg" alt="Lux Beachwear" class="about-banner">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/quality.jpg" class="card-img-top" alt="Quality">
+                <div class="card-body">
+                    <h5 class="card-title">Our Quality</h5>
+                    <p class="card-text">We ensure the highest quality standards for all our products, from fabric selection to final stitching.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/design.jpg" class="card-img-top" alt="Design">
+                <div class="card-body">
+                    <h5 class="card-title">Our Design</h5>
+                    <p class="card-text">Our designs are inspired by the latest trends and crafted to make you stand out on the beach.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/mission.jpg" class="card-img-top" alt="Mission">
+                <div class="card-body">
+                    <h5 class="card-title">Our Mission</h5>
+                    <p class="card-text">To offer exceptional beachwear that combines style, comfort, and sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team-section">
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="images/team1.jpg" alt="Team Member" class="team-img">
+                    <h4>Jane Doe</h4>
+                    <p>Founder & CEO</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="images/team2.jpg" alt="Team Member" class="team-img">
+                    <h4>John Smith</h4>
+                    <p>Lead Designer</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="images/team3.jpg" alt="Team Member" class="team-img">
+                    <h4>Sarah Johnson</h4>
+                    <p>Marketing Head</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .about-section {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .about-banner {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .card {
+        margin-top: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .team-section {
+        padding: 60px 0;
+        background: #f9f9f9;
+        text-align: center;
+    }
+
+    .team-member {
+        margin-top: 30px;
+    }
+
+    .team-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .team-member h4 {
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+
+    .team-member p {
+        color: gray;
+    }
+</style>

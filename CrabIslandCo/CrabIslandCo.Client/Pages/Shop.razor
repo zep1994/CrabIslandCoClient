@@ -1,0 +1,73 @@
+﻿@page "/shop"
+@inherits LayoutComponentBase
+
+<div class="shop-section">
+    <div class="container">
+        <h1>Shop Lux Beachwear</h1>
+        <p>Explore our collection of premium beachwear and accessories. Shop now to find your perfect beach outfit.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/tshirt.jpg" class="card-img-top" alt="T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Lux Beachwear T-Shirt</h5>
+                        <p class="card-text">$25.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/shorts.jpg" class="card-img-top" alt="Shorts">
+                    <div class="card-body">
+                        <h5 class="card-title">Lux Beachwear Shorts</h5>
+                        <p class="card-text">$35.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/hat.jpg" class="card-img-top" alt="Hat">
+                    <div class="card-body">
+                        <h5 class="card-title">Lux Beachwear Hat</h5>
+                        <p class="card-text">$20.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .shop-section {
+        padding: 60px 0;
+        background: #f9f9f9;
+        text-align: center;
+    }
+
+    .card {
+        margin-top: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .btn-primary {
+        display: block;
+        margin: 0 auto;
+    }
+</style>

@@ -1,30 +1,98 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inherits LayoutComponentBase
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">CrabIslandCo</a>
+        <a class="navbar-brand" href="/">
+            <img src="images/logo.jpg" alt="Lux Beachwear" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/">Home</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="shop">Shop</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="about">About</NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="contact">Contact</NavLink>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="privacy">Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="terms">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
 
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<style>
+    .navbar {
+        width: 100%;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
+    .navbar-brand .logo {
+        height: 50px;
+        width: auto;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
+    .nav-link {
+        color: white !important;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
 
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    .nav-link:hover {
+        color: #ffdd00 !important;
+    }
 
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http://www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%28255, 255, 255, 1%29%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+    }
+
+    .dropdown-menu {
+        background-color: #343a40;
+    }
+
+    .dropdown-item {
+        color: white;
+    }
+
+    .dropdown-item:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    @@media (max-width: 992px) {
+        .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-link {
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
