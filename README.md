@@ -16,12 +16,6 @@ The **Crab Island Company Client App** is the front-end for Crab Island Company,
 ### Built With
 
 - .NET (ASP.NET Core, Blazor)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Redux](https://redux.js.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
 
 ## Getting Started
 
